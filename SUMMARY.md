@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Quick start](quick-start.md)
 * [Beta-version](beta-version.md)
-* [Commands](commands.md)
+* [Channels](commands.md)
 * [configuration](configuration/README.md)
   * [Configuration](configuration/configuration.md)
   * [Format](configuration/format.md)
