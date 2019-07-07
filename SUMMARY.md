@@ -2,18 +2,21 @@
 
 * [Introduction](README.md)
 * [Quick start](quick-start.md)
-* [Beta-version](beta-version.md)
-* [Channels](commands.md)
-* [configuration](configuration/README.md)
-  * [Configuration](configuration/configuration.md)
-  * [Format](configuration/format.md)
-* [Connections.yml](connections.yml.md)
-* [Creating-a-Discord-bot](creating-a-discord-bot.md)
-* [Frequently asked questions](faq.md)
-* [installation](installation/README.md)
-  * [Node.js](installation/node.js.md)
-  * [NPM](installation/npm.md)
 * [Launching](launching.md)
-* [Troubleshooting](troubleshooting.md)
 * [Updating](updating.md)
+* [Beta versions](beta-version.md)
+* [Frequently asked questions](faq.md)
+* [Troubleshooting](troubleshooting.md)
+
+## Configuration
+
+* [Configuration](configuration/configuration-1.md)
+* [Channels](configuration/commands.md)
+* [Connections.yml](configuration/connections.yml.md)
+* [Format](configuration/format.md)
+
+## Other
+
+* [How to install Node.js](other/node-js.md)
+* [How to create a Discord bot](other/creating-a-discord-bot.md)
 

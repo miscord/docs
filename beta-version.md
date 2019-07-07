@@ -1,26 +1,34 @@
-# Beta-version
+---
+description: If you want to try new features out
+---
 
-If you want to use beta version:
+# Beta versions
 
-* NPM
+Currently, beta version are released only on NPM, GitHub and Docker Hub.
 
-  ```text
-  [sudo] npm install -g miscord-beta
-  ```
+#### NPM
 
-* Git
+```text
+npm install --global miscord-beta
+# or for a specific version
+npm install --global miscord-beta@5.0.0-beta21
+```
 
-  \`\`\` git pull git checkout dev
+#### GitHub
 
-## to go back:
+```text
+git checkout dev
+# or for a specific version
+git checkout v5.0.0-beta21
+```
 
-git checkout master
+#### Docker
 
-\`\`\`
+```text
+docker pull miscord/miscord:beta
+# or for a specific version
+docker pull miscord/miscord:5.0.0-beta21
+```
 
-* .zip
 
-Download a .zip from the dev branch [here](../tree/dev)
-
-Currently there are no binaries from beta versions.
 

@@ -1,4 +1,4 @@
-# Creating-a-Discord-bot
+# How to create a Discord bot
 
 * Go [here](https://discordapp.com/developers/applications/me)
 * Click "Create an application"

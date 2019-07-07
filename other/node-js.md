@@ -1,4 +1,4 @@
-# Node.js
+# How to install Node.js
 
 The latest `LTS` version of Node.js is recommended.
 

@@ -1,3 +1,7 @@
+---
+description: Tips for what to do if something doesn't work
+---
+
 # Troubleshooting
 
 * Restart the bridge
