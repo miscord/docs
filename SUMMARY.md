@@ -9,7 +9,7 @@
   * [Format](configuration/format.md)
 * [Connections.yml](connections.yml.md)
 * [Creating-a-Discord-bot](creating-a-discord-bot.md)
-* [FAQ](faq.md)
+* [Frequently asked questions](faq.md)
 * [installation](installation/README.md)
   * [Node.js](installation/node.js.md)
   * [NPM](installation/npm.md)
