@@ -8,13 +8,15 @@
 
  Download the .exe [here](https://download.miscord.net/win.zip) \(32-bit version [here](https://download.miscord.net/win32.zip)\)
 
-:penguin: Linux
+🐧 **Linux**
 
- Download the executable \[here\]\(https://download.miscord.net/linux.zip\) \(32-bit version \[here\]\(https://download.miscord.net/linux32.zip\)\)
+ Download the executable [here](https://download.miscord.net/linux.zip) \(32-bit version [here](https://download.miscord.net/linux32.zip)\)
 
 :apple: macOS
 
- Install Miscord using \[Homebrew\]\(https://brew.sh/\): \`\`\`bash /usr/bin/ruby -e "$\(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install\)" brew tap miscord/miscord brew cask install miscord \`\`\` or download the app directly \[here\]\(https://download.miscord.net/macapp.zip\)
+Install Miscord using [Homebrew](https://brew.sh/):`bash /usr/bin/ruby -e "$(curl -fsSL` [`https://raw.githubusercontent.com/Homebrew/install/master/install`](https://raw.githubusercontent.com/Homebrew/install/master/install)`)"brew tap miscord/miscord brew cask install miscord`
+
+or download the app directly [here](https://download.miscord.net/macapp.zip)
 
 ### Advanced
 
