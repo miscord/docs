@@ -1,12 +1,21 @@
-# Format
+# Format examples
 
-If you want to format your messages on Messenger differently, you can change format value \(`config.messenger.format`\)
+**From Discord:**
 
-Supported variables:
+![Original message](../../.gitbook/assets/image.png)
 
-* `{username}`
-* `{message}` or `{content}`
-* `{source}` \(`Discord` or `Messenger: group name` in case of Messenger linking\)
+![\*{username}\*: {content}](../../.gitbook/assets/image%20%281%29.png)
+
+The default format, keep in mind that the bold text doesn't appear as bold on mobile Messenger yet.
+
+![\[{username}\]: {content}](../../.gitbook/assets/image%20%282%29.png)
+
+![\[{username}\] {source}: {newline} {content}](../../.gitbook/assets/image%20%283%29.png)
+
+`messenger.sourceFormat.discord` is set here to `(#{name})`.  
+Useful if you have multiple channels connected to one Messenger chat and want to know from which channel the message was.
+
+\*\*\*\*
 
 **Example:**  
 Config:

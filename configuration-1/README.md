@@ -1,8 +1,12 @@
 # Configuration
 
-**Everything's optional, except for Messenger username/password and Discord token**
+Configuration is split into 2 files: main config file named `config.json` and a list of connections named `connections.yml`.
 
-## [Config Generator](https://miscord.net/config-generator.html)
+All Miscord needs to run are Discord \(and Messenger\) credentials, but there's a bunch of options to customize to make Miscord suit your needs.
+
+{% hint style="info" %}
+If you haven't created a config file yet, just run Miscord and use the wizard to easily configure it.
+{% endhint %}
 
 Default location of config file:
 
@@ -11,54 +15,36 @@ Default location of config file:
 * Linux: `~/.config/Miscord/config.json`
 * Other: `~/.miscord/config.json`
 
-## Miscord
+### How to read
 
-**Top-level values in the config**
+* Default values are specified after property name: `format` = `*{username}*: {content}`
+* Type is specified in italics after property name: `Array<String> | String`. Union like this means that you can specify or string \(`"1234"`\), or array of strings \(`["1234", "5678"]`\).
 
-| Variable name | Description | Default value |
-| :--- | :--- | :--- |
-| `logLevel` | Log level \(see [here](https://github.com/npm/npmlog#loglevelprefix-message-)\) | `info` |
-| `checkUpdates` | Enables checking updates on every launch | `false` |
-| `timezone` | Timezone for plan time parsing | \(none\) |
-| `ignoredSequences` | Sequences to ignore messages containing them | `[]` |
+### Config
 
-## Channels
+* `logLevel` = `info` _String_  
+  Levels:
 
-**These values should be in the `"channels": {}` block**
+  * `silent`
+  * `fatal`
+  * `error`
+  * `warn`
+  * `info`
+  * `debug`
+  * `trace`
 
-| Variable name | Description | Default value |
-| :--- | :--- | :--- |
-| `error` | Channel\(s\) for reporting errors, can be string or array | \(none\) |
-| `command` | Channel\(s\) for sending commands, can be string or array | \(none\) |
+ 
 
-## Messenger
-
-**These values should be in the `"messenger": {}` block**
-
-| Variable name | Description | Default value |
-| :--- | :--- | :--- |
-| `username` | Messenger username | :heavy\_multiplication\_x: |
-| `password` | Messenger password | :heavy\_multiplication\_x: |
-| `format` | Format of the message \(see [here](configuration/format)\) | `*{username}*: {message}` |
-| `sourceFormat` | Format of the source in a Facebook message \(see more [here](configuration/format)\) | `{ "discord": "(Discord)", "messenger": "(Messenger: {name})" }` |
-| `ignoreEmbeds` | Disables embed parsing from Discord | `false` |
-| `attachmentTooLargeError` | Shows "attachment too large" error when sending to Discord | `true` |
-
-## Discord
-
-**These values should be in the `"discord": {}` block**
-
-| Variable name | Description | Default value |
-| :--- | :--- | :--- |
-| `token` | Discord token | :heavy\_multiplication\_x: |
-| `guild` | Discord guild \(server\) | \(none\) |
-| `category` | Discord category name/id on the server | \(none\) |
-| `renameChannels` | Renames channels according to Messenger | `true` |
-| `showEvents` | Shows Facebook events \(join, leave, chat rename\) on Discord | `false` |
-| `showFullNames` | Shows Facebook users' full names alongside their nicknames on Discord | `false` |
-| `createChannels` | Enables creating new channels if not found \(enable if you want Miscord to create channels automatically according to your Messenger chats\) | `false` |
-| `massMentions` | Allows mentioning `@everyone` and `@here` | `true` |
-| `userMentions` | Allows mentioning regular users/roles | `true` |
-| `ignoreBots` | Ignore all messages from bots \(or webhooks\) | `false` |
-| `ignoredUsers` | Ignored users \(by ID\) | `[]` |
+* `api` Credentials used for API and dashboard See more here: [Dashboard](dashboard.md)
+  * `username` _String_
+  * `password` _String_ **or**
+  * `key` _String_ 
+* `checkUpdates` = `false` _Boolean_ Whether to check updates from GitHub on launch 
+* `timezone` _String_ Used for time in the console, on plans and reminders from Messenger. List of timezones: [en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) \(e.g., `Europe/Warsaw` or `America/New_York`\) 
+* `ignoredSequences` _Array&lt;String&gt;_ I don't even know 
+* `channels`
+  * `error` _Array&lt;String&gt;_ \| _String_ Channel ID or list of channel IDs for reporting errors.  Highly recommended to set up. You can also use your user ID if you want to receive DMs.
+  * `command` _Array&lt;String&gt;_ \| _String_ Channel ID or list of channel IDs for receiving commands. Check the list of commands by sending `@Miscord help`. As above, highly recommended and you can use your user ID. When using user ID, you don't need to ping the bot. 
+* `discord` [DiscordConfiguration](discord.md) 
+* `messenger` [MessengerConfiguration](messenger/)
 

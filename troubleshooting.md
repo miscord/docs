@@ -10,5 +10,5 @@ description: Tips for what to do if something doesn't work
 * Check your internet connection
 * Make sure no text in config has trailing spaces
 * Login with a browser to check for pending login reviews
-* If this doesn't work, create new issue [here](../issues) with your error log
+* If this doesn't work, create new issue [here](https://github.com/miscord/miscord/issues) with your error log
 
