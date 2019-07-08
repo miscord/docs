@@ -48,7 +48,7 @@ services:
 
 **NPM \(all platforms\)**
 
-* Install Node.js using instructions [here](https://github.com/miscord/docs/tree/869f6068a6791a3ea5626f000165348f4e6047b1/node.js)
+* Install Node.js using instructions [here](other/node-js.md)
 * Install Miscord using `npm install -g miscord`
 
 \(On Mac or Linux, prefix `sudo` is needed if you are not root user, i.e. `sudo npm install -g miscord`\)  
@@ -56,12 +56,10 @@ You can follow the guide [here](https://github.com/sindresorhus/guides/blob/mast
 
 ## Setup
 
-* Create a Discord bot \(see [here](https://github.com/miscord/docs/tree/869f6068a6791a3ea5626f000165348f4e6047b1/installation/Creating-a-Discord-bot/README.md)\)
+* Create a Discord bot \(see [here](other/creating-a-discord-bot.md)\)
 * Create a dedicated Facebook account
   * make it look believable
   * try to come up or generate a fake name \(you can set the nickname for it in the chat\)
   * you can use a profile picture from [https://thispersondoesnotexist.com/](https://thispersondoesnotexist.com/)
   * log into it on a phone \(Messenger app\)
-* Generate config [here](https://miscord.net/config-generator.html) - config options explained [here](https://github.com/miscord/docs/tree/869f6068a6791a3ea5626f000165348f4e6047b1/installation/Configuration/README.md)
-* Build your connections \(see [here](https://github.com/miscord/docs/tree/869f6068a6791a3ea5626f000165348f4e6047b1/installation/Connections.yml), you have to do it by hand for now\)
 
