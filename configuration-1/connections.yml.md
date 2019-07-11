@@ -1,24 +1,25 @@
-# Connections.yml
+# Connections
 
 **Important links**
 
 * [How to get Discord IDs](https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
-* [How to get Messenger IDs](https://github.com/Bjornskjald/miscord/wiki/faq#where-to-find-thread-id)
+* [How to get Messenger IDs](../faq.md#where-to-find-thread-id)
 
 Your connection list is stored in a file named `connections.yml`. Example format:
 
+{% code-tabs %}
+{% code-tabs-item title="connections.yml" %}
 ```yaml
 connection-name:
   - type: discord
     id: '1234'
-    name: 'test channel'
   - type: messenger
     id: '5678'
-    name: 'Testing Facebook thread'
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-Each connection entry consists of "endpoint" blocks, which usually have 3 properties: **type** \(`discord`/`messenger`\), **id** and **name**.  
-When you add a new connection, `type` and `id` is required, `name` will be added automatically.  
+Each connection entry consists of "endpoint" blocks, which usually have 2 properties: **type** \(`discord`/`messenger`\) and **id**, both required when creating a connection.  
 You can add as many endpoints to one connections as you want.  
 Additionally, an endpoint can have a `readonly` property, which when set to `true` can make that endpoint read-only
 
@@ -34,8 +35,10 @@ The example above can be recreated using following commands:
 @Miscord link connection-name messenger 5678
 ```
 
-Example connections file \(used live on [Miscord's Discord server](https://discord.gg/DkmTvVz) in `#testing`\):
+Example connections file \(~~used live on~~ [~~Miscord's Discord server~~](https://discord.gg/DkmTvVz) ~~in `#testing`~~Facebook banned my accounts\) :
 
+{% code-tabs %}
+{% code-tabs-item title="connections.yml" %}
 ```yaml
 __comment: >-
   This is your connections.yml file. More info at
@@ -43,22 +46,19 @@ __comment: >-
 testing:
   - type: discord
     id: '433683136115900421'
-    name: testing
   - type: messenger
     id: '1616656375118166'
-    name: miscord-testing
 dev:
   - type: discord
     id: '461611312196091321'
-    name: dev-tests
   - type: messenger
     id: '1709943095783086'
-    name: dev-1
   - type: messenger
     id: '1458225837612649'
     readonly: true
-    name: dev-2
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Command representation:
 

@@ -7,7 +7,7 @@
   * [Messenger config](configuration-1/messenger/README.md)
     * [Format examples](configuration-1/messenger/format.md)
   * [Dashboard](configuration-1/dashboard.md)
-  * [Connections.yml](configuration-1/connections.yml.md)
+  * [Connections](configuration-1/connections.yml.md)
 * [Launching](launching.md)
 * [Updating](updating.md)
 * [Beta versions](beta-version.md)
