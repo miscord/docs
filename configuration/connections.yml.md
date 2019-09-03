@@ -5,12 +5,14 @@
 * [How to get Discord IDs](https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-)
 * [How to get Messenger IDs](../faq.md#where-to-find-thread-id)
 
-Your connection list is stored in a file named `connections.yml`. Example format:
+Your connection list is stored in a file named `connections.yml`.   
+It's a [YAML](https://en.wikipedia.org/wiki/YAML) file that should be in the same folder as your config file \(creates itself after a successful start\).  
+Example format:
 
 {% code-tabs %}
 {% code-tabs-item title="connections.yml" %}
 ```yaml
-connection-name:
+example:
   - type: discord
     id: '1234'
   - type: messenger
