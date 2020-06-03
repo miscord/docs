@@ -9,8 +9,7 @@ Your connection list is stored in a file named `connections.yml`.
 It's a [YAML](https://en.wikipedia.org/wiki/YAML) file that should be in the same folder as your config file \(creates itself after a successful start\).  
 Example format:
 
-{% code-tabs %}
-{% code-tabs-item title="connections.yml" %}
+{% code title="connections.yml" %}
 ```yaml
 example:
   - type: discord
@@ -18,8 +17,7 @@ example:
   - type: messenger
     id: '5678'
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Each connection entry consists of "endpoint" blocks, which usually have 2 properties: **type** \(`discord`/`messenger`\) and **id**, both required when creating a connection.  
 You can add as many endpoints to one connections as you want.  
@@ -39,8 +37,7 @@ The example above can be recreated using following commands:
 
 Example connections file \(~~used live on~~ [~~Miscord's Discord server~~](https://discord.gg/DkmTvVz) ~~in `#testing`~~Facebook banned my accounts\) :
 
-{% code-tabs %}
-{% code-tabs-item title="connections.yml" %}
+{% code title="connections.yml" %}
 ```yaml
 __comment: >-
   This is your connections.yml file. More info at
@@ -59,8 +56,7 @@ dev:
     id: '1458225837612649'
     readonly: true
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Command representation:
 
